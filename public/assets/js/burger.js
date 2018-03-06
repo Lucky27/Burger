@@ -5,15 +5,15 @@ $(function() {
     var eat = $(this).data("eat");
 
     var newEat = {
-      devoured: 1
+      devoured: eat
     };
 
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: newEat
-    }).then(function() {
-        console.log("changed to ", eat);
+    }).then(function(data) {
+        console.log("changed to ", data);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -26,7 +26,7 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#ca").val().trim(),
+      burger_name: $("#ca").val().trim(),
       // devoured: $("[name=devoured]:checked").val().trim()
     };
 
@@ -35,8 +35,8 @@ $(function() {
       type: "POST",
       data: newBurger
     }).then(
-      function() {
-        console.log("created new burger");
+      function(data) {
+        console.log("created new burger", data);
         // Reload the page to get the updated list
         location.reload();
       }
