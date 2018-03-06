@@ -1,0 +1,64 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: grey;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+
+}
+
+body{
+	background-color:red;
+}
+
+.button{
+	height:50px;
+	width:100px;
+	text-align: center;
+}
+
+button{
+	font-size:30px;
+	text-align: center;
+}
+
+button:hover{
+	color:red;
+	background-color:black;
+}
+
+h1{
+	text-align: center;
+}
+
+li{
+	background-color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
